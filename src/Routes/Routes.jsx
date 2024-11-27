@@ -7,6 +7,7 @@ export const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout />,
+        loader:()=> fetch('http://localhost:5000/coffee')
     },
     {
         path: '/addCoffee',
